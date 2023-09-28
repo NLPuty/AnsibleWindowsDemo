@@ -1,0 +1,12 @@
+---
+# Settings specific for windows connection to remote host
+
+# Set Ansible connection to WinRM
+ansible_connection: winrm
+ansible_winrm_server_cert_validation: ignore
+
+# Set WinRM Authentication options
+ansible_winrm_transport: kerberos
+ansible_winrm_operation_timeout_sec: 75
+ansible_winrm_read_timeout_sec: 150
+ansible_winrm_kerberos_delegation: true

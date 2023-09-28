@@ -1,0 +1,10 @@
+---
+- name: test
+  hosts: windows
+  gather_facts: true
+
+  tasks: 
+    - debug:
+        msg: "ok!"
+    - win_shell: |
+        Write-Host "Dit is de tegenhanger van Shell maar dan op windows (powershell)"
